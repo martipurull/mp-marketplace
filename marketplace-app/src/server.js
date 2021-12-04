@@ -4,6 +4,7 @@ import cors from 'cors'
 import { join } from 'path'
 import { badRequestHandler, unauthorisedHandler, notFoundHandler, genericErrorHandler } from './errorHandlers.js'
 import productsRouter from './services/products.js'
+import reviewsRouter from './services/reviews.js'
 
 const server = express()
 const port = 3001
@@ -19,7 +20,7 @@ server.use(express.json())
 //endpoints
 server.use('/products', productsRouter)
 // server.use('/products/:productId', productImageRouter)
-// server.use('/products/:productId/reviews', reviewsRouter)
+server.use('/products/:productId/reviews', reviewsRouter)
 
 //error handlers
 server.use(badRequestHandler)
