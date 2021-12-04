@@ -19,7 +19,7 @@ server.use(express.json())
 
 //endpoints
 server.use('/products', productsRouter)
-// server.use('/products/:productId', productImageRouter)
+server.use('/products/:productId', productImageRouter)
 server.use('/products/:productId/reviews', reviewsRouter)
 
 //error handlers
