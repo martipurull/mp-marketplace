@@ -17,13 +17,13 @@
 }
 
 #mp-footer {
- justify-content: space-evenly;
- align-items: baseline;
+    justify-content: space-evenly;
+    align-items: baseline;
 }
 
 #main-jumbo {
-    background: rgb(69,241,147);
-    background: linear-gradient(315deg, rgba(69,241,147,0.40940126050420167) 0%, rgba(255,255,255,1) 100%);
+    background: rgb(52,58,64);
+    background: linear-gradient(180deg, rgba(52,58,64,1) 0%, rgba(76,85,92,1) 25%, rgba(211,211,211,1) 100%);
 }
 
 .product-img {
