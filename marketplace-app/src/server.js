@@ -5,6 +5,7 @@ import { join } from 'path'
 import { badRequestHandler, unauthorisedHandler, notFoundHandler, genericErrorHandler } from './errorHandlers.js'
 import productsRouter from './services/products.js'
 import reviewsRouter from './services/reviews.js'
+import productImageRouter from './services/uploadImage.js'
 
 const server = express()
 const port = 3001
